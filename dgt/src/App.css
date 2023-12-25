@@ -1,0 +1,460 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+ul,
+li,
+ol {
+  list-style-type: none;
+}
+
+.main-wrapper,
+.header,
+.main {
+  min-width: auto;
+}
+
+a,
+span,
+div,
+button {
+  outline: none !important;
+}
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+.header {
+  width: 100%;
+  min-width: 320px;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 500;
+}
+
+.header-container {
+  display: flex;
+  position: relative;
+}
+
+.header-logo {
+  margin-top: 33px;
+  display: block;
+  flex: 0 0 127px;
+}
+
+.header-nav {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  margin: 0 auto;
+}
+
+.header-nav-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+
+.header-nav-list li {
+  margin: 0 20px;
+  padding-bottom: 16px;
+  text-decoration: none;
+}
+
+.header-nav-list li a {
+  display: block;
+  position: relative;
+  padding: 65px 0 20px;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.4rem;
+  line-height: normal;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  color: #eeeeee;
+  text-transform: uppercase;
+  z-index: 9;
+}
+
+.header-right {
+  display: flex;
+}
+
+.header-lang {
+  display: block;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  margin-top: 64px;
+  height: 30px;
+  margin-right: 70px;
+  position: relative;
+  z-index: 9;
+}
+
+.header-lang_current {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 22px;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: normal;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.header-lang_current::after {
+  content: '';
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+  width: 10px;
+  height: 7px;
+  margin-left: 6px;
+  background: transparent url(http://dgt-store.com/wp-content/themes/dgt/img/icon-dropdown.svg) no-repeat center/contain;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.header-socials {
+  padding-top: 50px;
+}
+
+.header-socials.socials {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -4px;
+}
+
+.socials li {
+  margin: 4px;
+}
+
+.socials a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #353535;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  border-radius: 3px;
+  font-size: 0;
+
+}
+
+.socials li:hover {
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(186, 9, 21, 0.5);
+  box-shadow: 0px 0px 0px 0px rgba(186, 9, 21, 0.5);
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+
+
+
+
+
+
+
+
+.main {
+  box-sizing: border-box;
+  min-width: 320px;
+  width: 100%;
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  text-align: left;
+}
+
+
+.main-page {
+  background-color: #100c0c;
+  box-sizing: border-box;
+  overflow:hidden;
+}
+.main-page-head {
+  height: 815px;
+  position: relative;
+}
+
+.main-page-head img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.main-page .main-page-head .head-title {
+  max-width: 403px;
+  width: 100%;
+  position: absolute;
+  top: 275px;
+  left: 320px;
+}
+
+.main-page-head::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 411px;
+  height: 2px;
+  background-color: #831516;
+}
+.head-title h1 {
+  color: #efefef;
+  font-family: "Oswald";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 45px;
+  text-transform: uppercase;
+  letter-spacing: 0.68px;
+  margin-bottom: 19px;
+}
+.subtitle {
+  color: #efefef;
+  font-family: "Oswald";
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 45px;
+  letter-spacing: 0.6px;
+}
+
+.main-page-body {
+  margin-top: -70px;
+  z-index: 50;
+  position: relative;
+}
+.about {
+  max-width: 1081px;
+  width: 100%;
+  background-color: rgba(24,22,22,0.95);
+  margin: auto;
+  padding: 53px 136px 88px 75px;
+  position: relative;
+}
+.about:after {
+  content: url(http://dgt-store.com/wp-content/themes/dgt/img/dot_bg.png);
+  position: absolute;
+  left: -70px;
+  bottom: -70px;
+  z-index: -1;
+}
+.title {
+  color: #efefef;
+  font-family: "Oswald";
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 42px;
+  z-index: 65;
+  position: relative;
+}
+.about-item:before {
+  content: url(http://dgt-store.com/wp-content/themes/dgt/img/about-bottom.png);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+.about-item:after {
+  content: url(http://dgt-store.com/wp-content/themes/dgt/img/about-top.png);
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+.about-item p {
+  color: #eeeeee;
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.02px;
+  margin-bottom: 40px;
+}
+.about-car {
+  position: absolute;
+  right: -580px;
+  bottom: -260px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.dealers {
+  margin-top: 200px;
+}
+.dealers h3 {
+  color: #efefef;
+  font-family: "Oswald";
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 43px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

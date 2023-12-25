@@ -1,0 +1,103 @@
+
+.advantage {
+    position: relative;
+    margin-top: 100px;
+  
+  }
+  
+  .advantage h2 {
+    color: #efefef;
+    font-family: "Oswald";
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 0.34px;
+    margin-bottom: 89px;
+    text-align: center;
+  }
+  
+  .advantage-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 990px;
+  }
+  
+  .advantage-block {
+    max-width: 330px;
+    width: 100%;
+    min-height: 229px;
+    padding: 45px;
+  }
+  
+  .title {
+    margin-bottom: 10px;
+    color: #efefef;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+  }
+  
+  .title {
+    margin-bottom: 10px;
+    color: #efefef;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+  }
+  
+  .icons {
+    margin-bottom: 22px;
+  }
+  
+  .description {
+    color: #cccccc;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+  }
+  
+  .advantage-block.bg {
+    background-color: rgba(0, 0, 0, 0.35);
+    position: relative;
+  }
+  
+  .advantage-block.bg:after {
+    content: url(http://dgt-store.com/wp-content/themes/dgt/img/Shape_910.png);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 500;
+  }
+  
+  .big-picture {
+    right: -210px;
+    bottom: -54px;
+    position: absolute;
+  }
+  
+  .small-picture {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+  }
+  
+  .advantage:after {
+    position: absolute;
+    content: url(http://dgt-store.com/wp-content/themes/dgt/img/smoke.png);
+    z-index: -1;
+    bottom: -148px;
+    right: 0;
+  }
+  
