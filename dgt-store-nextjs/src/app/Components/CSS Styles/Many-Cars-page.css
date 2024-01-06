@@ -1,0 +1,181 @@
+.main .page-single-catalog{
+    display:block;
+    overflow: hidden;
+    background-color: #0f0f0f;
+}
+
+.page-single-catalog .img-wrapper img {
+    max-width: none;
+    width: 100%;
+    object-fit: cover;
+    height: 1352px;
+}
+.page-single-catalog .page-contacts__breadcrumbs {
+    margin-top: -740px;
+}
+.wrapper {
+    min-width: 320px;
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .breadcrumbs{
+    padding-bottom: 40px;
+  }
+  .breadcrumbs ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(212, 212, 212, 0.4);
+    padding-bottom: 29px;
+  }
+  .breadcrumbs ul li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    font-family: "Lato", sans-serif;
+    font-size: 1.4rem;
+    line-height: normal;
+    font-weight: 400;
+    color: #eeeeee;
+  }
+  .breadcrumbs ul a {
+    color: #efefef !important;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.84px;
+  }
+  .breadcrumbs ul li::after {
+    content: '/';
+    display: block;
+    margin: 0 5px;
+  }
+  .page-single-catalog h2 {
+    color: #efefef;
+    font-family: "Open Sans";
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 58px;
+    text-transform: uppercase;
+    letter-spacing: 1.38px;
+    margin-bottom: 41px;
+}
+.page-single-catalog .catalog {
+    display: flex;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.page-single-catalog .catalog .car-block {
+    width: 31%;
+    min-height: 502px;
+    border-radius: 3px;
+    background-color: #181616;
+    margin-right: 30px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.page-single-catalog .catalog .car-block .pictures {
+    width: 100%;
+    height: 246px;
+    margin-bottom: 33px;
+    position: relative;
+}
+.page-single-catalog .catalog .car-block .pictures img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.page-single-catalog .catalog .car-block .title {
+    color: #efefef;
+    font-family: "Oswald";
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.32px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.page-single-catalog .catalog .car-block .exhaust {
+    text-align: center;
+    margin-bottom: 18px;
+}
+.page-single-catalog .catalog .car-block span {
+    color: #efefef;
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.96px;
+}
+.page-single-catalog .catalog .car-block span {
+    color: #efefef;
+    font-family: "Lato";
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.96px;
+}
+.page-single-catalog .catalog .car-block span:first-of-type {
+    padding-right: 10px;
+}
+.page-single-catalog .catalog .car-block .year {
+    text-align: center;
+    margin-bottom: 29px;
+}
+.page-single-catalog .catalog .car-block a {
+    max-width: 275px;
+    width: 100%;
+    height: 49px;
+    border-radius: 25px;
+    border: 1px solid #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #efefef;
+    font-family: "Oswald";
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.75px;
+    margin: auto;
+    position: relative;
+    z-index: 5;
+}
+.page-single-catalog .catalog .car-block a:hover {
+    box-shadow: 0 4px 18px 4px rgba(186, 9, 21, 0.5);
+    background-color: #e20614;
+    border-color: #e20614;
+    animation: btnAnim 1s infinite;
+}
+.page-single-catalog .catalog .car-block:after {
+    content: url(http://dgt-store.com/wp-content/themes/dgt/img/Shape_910.png);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+@keyframes btnAnim {
+    0% {
+        background-color: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    100% {
+        box-shadow: 0 4px 18px 4px rgba(186, 9, 21, 0.5);
+        background-color: #e20614;
+        color: #ffffff;
+        border-color: #e20614;
+    }
+}
+

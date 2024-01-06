@@ -1,0 +1,89 @@
+{
+  "Main_page": {
+    "header": {
+      "about_us": "About us",
+      "Catalog": "Catalog",
+      "News": "News",
+      "Video": "Video",
+      "Dealers": "Dealers",
+      "Contacts": "Contacts"
+    },
+    "lng": "en",
+    "Main_page_head": {
+      "title": "Sports exhaust systems",
+      "undertitle": "for cars."
+    },
+    "About_us": {
+      "about": "About us",
+      "about_content": {
+        "1": "Ночь, пустые улицы, звенящая тишина и твой автомобиль.\n Что выберешь ты — громкий качественный звук или бесшумную езду?\n С выхлопными системами DGT ты почувствуешь себя королем дороги. Ты сам создаешь звук своего настроения"
+      }
+    },
+    "News": "Our news",
+    "Video": "Videos",
+    "Advantages": {
+      "title": "Advantages",
+      "1": "Quality assurance",
+      "2": "Reasonable prices",
+      "3": "Experienced staff",
+      "4": "Great service",
+      "5": "Convenient location",
+      "6": "3 sound levels"
+    },
+    "Dealers": "Our dealers",
+    "Read_more": "Read more",
+    "userMessagesUnread_one": "You have {{count}} unread message.",
+    "userMessagesUnread_other": "You have {{count}} unread messages."
+  },
+
+  "Contact_us": {
+    "Contact_card":{
+      "office": {
+        "title": "Our office:",
+        "content": "Moscow, Kyiv street, 14 с4"
+      },
+      "number": {
+        "title": "Phone number:",
+        "content": "+7(499) 380-71-11"
+      },
+      "mail": {
+        "title": "E-mail:",
+        "content": "Info@dgt-store.ru"
+      },
+      "schedule": {
+        "title": "Work schedule:",
+        "content": "Tue.-Sun. C 10:00 до 21:00"
+      },
+      "schedule_item": {
+        "title": "",
+        "content": "Mon. Weekend"
+      },
+      "follow_us": "Follow us:"
+    }
+  },
+
+  "Form": {
+    "Name": "Name",
+    "Phone": "Phone",
+    "City": "City",
+    "Country": "Country",
+    "Model": "Auto model",
+    "Questions": "Questions",
+    "Send": "Submit",
+    "Title": "If you have any questions, please fill out the request form below"
+  },
+
+  "Auto_card": {
+    "Engine": "Engine:",
+    "Year": "Year:",
+    "Go_over": "Go over"
+  },
+
+  "Car_page": {
+    "Brand": "Brand/model",
+    "Year": "Year",
+    "Engine": "Engine/body",
+    "Material": "Material",
+    "Price": "Price"
+  }
+}

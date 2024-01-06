@@ -1,0 +1,118 @@
+@media (max-width: 1332px) {
+    .page-single-catalog .catalog .car-block {
+        width: 45%;
+    }
+}
+
+@media (max-width:1200px) {
+    .page-single-catalog .img-wrapper img {
+        height: 1150px;
+    }
+
+    .page-single-catalog .page-contacts__breadcrumbs {
+        margin-top: -630px;
+    }
+}
+
+@media (max-width: 991px) {
+    .page-single-catalog .img-wrapper img {
+        height: 1000px;
+    }
+
+    .page-single-catalog .page-contacts__breadcrumbs {
+        margin-top: -555px;
+    }
+}
+
+@media (max-width: 904px) {
+    .page-single-catalog .catalog .car-block {
+        margin-right: 3px;
+        margin-bottom: 3px;
+    }
+}
+
+@media (max-width: 800px) {
+    .page-single-catalog .catalog .car-block .pictures {
+        max-width: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .page-single-catalog .img-wrapper img {
+        height: 800px;
+    }
+
+    .page-single-catalog .page-contacts__breadcrumbs {
+        margin-top: -445px;
+    }
+
+    .page-single-catalog h2 {
+        font-size: 38px;
+        line-height: 32px;
+    }
+
+    .page-single-catalog .catalog {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 575px) {
+    .page-single-catalog .img-wrapper img {
+        height: 650px;
+    }
+
+    .page-single-catalog .page-contacts__breadcrumbs {
+        margin-top: -365px;
+        padding-bottom: 25px;
+    }
+
+    .page-single-catalog h2 {
+        font-size: 28px;
+        line-height: 23px;
+        margin-bottom: 25px;
+    }
+
+    .page-single-catalog .catalog {
+        margin-bottom: 0;
+    }
+
+    .page-single-catalog .catalog .car-block {
+        width: 49%;
+        min-height: 403px;
+    }
+    .page-single-catalog .catalog .car-block .pictures {
+        height: 150px;
+        margin-bottom: 15px;
+    }
+    .page-single-catalog .catalog .car-block .title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .page-single-catalog .catalog .car-block .exhaust {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .page-single-catalog .catalog .car-block span {
+        font-size: 14px;
+        padding-right: 0 !important;
+        padding-bottom: 10px;
+        display: block;
+    }
+    .page-single-catalog .catalog .car-block .year {
+        margin-bottom: 10px;
+    }
+    .page-single-catalog .catalog .car-block a {
+        margin-bottom: 25px;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .page-single-catalog .img-wrapper img {
+        height: 550px;
+    }
+
+    .page-single-catalog .page-contacts__breadcrumbs {
+        margin-top: -320px;
+    }
+}

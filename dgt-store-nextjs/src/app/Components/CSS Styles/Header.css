@@ -1,0 +1,401 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+ul,
+li,
+ol {
+  list-style-type: none;
+}
+
+.main-wrapper,
+.header,
+.main {
+  min-width: auto;
+}
+
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+.header {
+  width: 100%;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 500;
+}
+
+.header-container {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.header-logo {
+  margin-top: 33px;
+  display: block;
+  flex: 0 0 127px;
+}
+
+.header-nav {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  margin: 0 auto;
+}
+
+.header-nav-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+
+.header-nav-list li {
+  margin: 0 20px;
+  padding-bottom: 16px;
+  text-decoration: none;
+}
+
+
+.header-nav-list li:hover .sub-menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-nav-list li .sub-menu {
+  position: absolute;
+  display: none;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  background: #0f0f0f url(http://dgt-store.com/wp-content/themes/dgt/img/bg-menu.jpg) no-repeat top center/cover;
+  padding: 30px 90px 27px;
+  z-index: 99;
+}
+
+.header-nav-list li .sub-menu {
+  top: 107px;
+}
+
+.header-nav-list li .sub-menu li {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 25%;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  margin: 0;
+  padding: 0 20px;
+  position: relative;
+}
+
+.header-nav-list li .sub-menu li a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+}
+
+.header-nav-list li .sub-menu li a::before {
+  background: none;
+  border-bottom: none;
+}
+
+.header-nav-list li .sub-menu li a img {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-right: 20px;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.header-nav-list li .sub-menu li:hover a img{
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.header-nav-list li .sub-menu li:hover .sub-menu-wrapper {
+  display: block;
+}
+
+.header-nav-list li .sub-menu .sub-menu-wrapper {
+  display: none;
+  z-index: 99;
+  position: absolute;
+  padding: 0;
+  top: -webkit-calc(100% - 10px);
+  top: calc(100% - 10px);
+  left: 75px;
+  width: 286px;
+  padding: 30px 15px 35px 20px;
+  background: transparent url(http://dgt-store.com/wp-content/themes/dgt/img/bg-submenu.png) no-repeat top left/cover;
+}
+
+.sub-menu .sub-menu-wrapper li a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 50px;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: normal;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.06em;
+  color: #eeeeee;
+  text-transform: none;
+}
+
+.header-nav-list li .sub-menu .sub-menu {
+  display: block;
+  position: static;
+  height: 200px;
+  overflow: hidden;
+  background: transparent;
+  padding: 0;
+}
+
+
+.header-slider{
+  position: static !important;
+  display: grid !important;
+}
+
+.header-slider .swiper-slide{
+  padding-right: 0px;
+}
+
+.header-slider .swiper-slide:hover{
+  background-color: rgba(174, 174, 174, 0.15);
+  transition: all 0.2s linear;
+}
+
+.header-slider .swiper-scrollbar.swiper-scrollbar-vertical {
+  top: 30px;
+  height: 210px;
+  right: 15px;
+}
+
+
+
+.header-nav-list li:hover a {
+  color: #fff;
+}
+
+
+.header-nav-list li:hover a::before {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+.header-nav-list li a::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -20px;
+  right: -20px;
+  background: transparent url(http://dgt-store.com/wp-content/themes/dgt/img/bg-menu-item.png) no-repeat center/cover;
+  border-bottom: 1px solid #efefef;
+  z-index: -1;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+
+.header-nav-list li a {
+  display: block;
+  position: relative;
+  padding: 65px 0 20px;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.4rem;
+  line-height: normal;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  color: #eeeeee;
+  text-transform: uppercase;
+  z-index: 9;
+}
+
+.header-right {
+  display: flex;
+}
+
+.header-lang {
+  display: block;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  margin-top: 64px;
+  height: 30px;
+  margin-right: 70px;
+  position: relative;
+  z-index: 9;
+}
+
+.header-lang_current {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 22px;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: normal;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.header-lang_current::after {
+  content: '';
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: block;
+  width: 10px;
+  height: 7px;
+  margin-left: 6px;
+  background: transparent url(http://dgt-store.com/wp-content/themes/dgt/img/icon-dropdown.svg) no-repeat center/contain;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.header-lang:hover .header-lang_current::after{
+  -webkit-transform: scale(1, -1);
+    -ms-transform: scale(1, -1);
+    transform: scale(1, -1);
+}
+
+.header-lang:hover .header-lang__dropdown {
+  display: block;
+}
+.header-lang__dropdown {
+  display: none;
+  padding: 5px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #181616;
+  border-radius: 3px;
+}
+.header-lang__dropdown::before{
+  content: '';
+  display: block;
+  width: 18px;
+  height: 7px;
+  position: absolute;
+  bottom: 100%;
+  right: 13px;
+  border-bottom: 7px solid #181616;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+}
+.header-lang__dropdown a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 55px;
+  height: 34px;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: normal;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.header-lang__dropdown a:hover{
+  background-color: #353535;
+}

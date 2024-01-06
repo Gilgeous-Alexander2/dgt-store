@@ -1,0 +1,106 @@
+.videos {
+    margin-top: 92px;
+  }
+  
+  .videos h2 {
+    color: #efefef;
+    font-family: "Oswald";
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 0.34px;
+    margin-bottom: 29px;
+  }
+  
+  .video-item {
+    display: flex;
+  }
+  
+  .video-left {
+    margin-right: 30px;
+  }
+  
+  .youtube {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .youtube::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+  }
+  .youtube:hover:before {
+    z-index: -1;
+    background-color: rgb(0 0 0);
+  }
+  .youtube iframe {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .youtube img {
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .video-left-item {
+    display: flex;
+  }
+  
+  .big-video {
+    max-width: 690px;
+    width: 100%;
+    height: 360px;
+    background-color: #181616;
+    margin-bottom: 30px;
+  }
+
+  .big-video2{
+    max-width: 690px;
+    width: 100%;
+    height: 360px;
+    background-color: #181616;
+    margin-top: 30px;
+  }
+  
+  .small-video {
+    max-width: 330px;
+    width: 100%;
+    height: 209px;
+    background-color: #181616;
+    margin-right: 30px;
+  }
+  .small-video:last-of-type {
+    margin-right: 0px;
+  }
+  .main-page .main-page-body .video-item .youtube .play-button {
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    position: absolute;
+    cursor: pointer;
+    z-index: 200;
+}
+.far.fa-play-circle:before {
+  content: "\f144";
+  font-weight:900;
+  font-family: "Font Awesome\ 5 Free";
+}
+.main-page .main-page-body .video-item .youtube .play-button i.far {
+  color: #ffffff;
+  z-index: 200;
+  font-size: 38px;
+  font-weight:900;
+  font-family: "Font Awesome\ 5 Free";
+}
+  

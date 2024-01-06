@@ -1,0 +1,98 @@
+@media (max-width:991px) {
+    .main .page-contacts .img-wrapper img {
+        height: 600px;
+    }
+
+    body .container {
+        padding: 0 3px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main .page-contacts .img-wrapper img {
+        height: 500px;
+    }
+
+    .page-contacts .page-contacts-body .container .top {
+        flex-direction: column-reverse;
+    }
+
+    .page-contacts .page-contacts-body .address {
+        margin: auto;
+        margin-bottom: 40px;
+        padding: 15px;
+        height: 440px;
+        width: 100%;
+    }
+    .page-contacts .page-contacts-map {
+        max-width: none;
+        height: 400px;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 575px) {
+    .main .page-contacts .img-wrapper img {
+        height: 300px;
+    }
+    .page-contacts .page-contacts-body .container .top {
+        margin-bottom: 25px;
+    }
+    .page-contacts .page-contacts-body .address {
+        margin-bottom: 25px;
+        padding: 25px;
+        width: 305px;
+    }
+    .page-contacts .page-contacts-body .address .title, .page-contacts .page-contacts-body .address .office, .page-contacts .page-contacts-body .address .number-phone, .page-contacts .page-contacts-body .address .mail, .page-contacts .page-contacts-body .address .schedule, .page-contacts .page-contacts-body .address .social-block-title {
+        margin-bottom: 10px;
+    }
+    .page-contacts .page-contacts-map {
+        height: 250px;
+    }
+}
+
+
+
+
+@media (max-width: 360px) {
+    .page-contacts .page-contacts-body .container .top .address {
+        height: auto;
+        width: 100%;
+    }
+    .page-contacts .page-contacts-body .address .office {
+        flex-direction: column;
+    }
+    .page-contacts .page-contacts-body .address .office-left {
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .page-contacts .page-contacts-body .address .office-right {
+        width: 100%;
+    }
+    .page-contacts .page-contacts-body .address .number-phone, .page-contacts .page-contacts-body .address .mail {
+        flex-direction: column;
+    }
+    .page-contacts .page-contacts-body .address .number-phone-left, .page-contacts .page-contacts-body .address .mail-left {
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .page-contacts .page-contacts-body .address .number-phone-right, .page-contacts .page-contacts-body .address .mail-right {
+        width: 100%;
+    }
+    .page-contacts .page-contacts-body .address {
+        height: auto;
+        width: 100%;
+    }
+        
+}

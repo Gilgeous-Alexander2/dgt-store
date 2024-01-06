@@ -1,0 +1,306 @@
+.main .page-contacts {
+  display: block;
+  overflow: hidden;
+  background-color: #0f0f0f;
+}
+
+.page-contacts__head {
+  outline: none !important;
+}
+
+.img-wrapper {
+  outline: none !important;
+}
+
+.page-contacts .page-contacts__head .img-wrapper img {
+  max-width: none;
+  width: 100%;
+  height: 814px;
+  object-fit: cover;
+}
+
+.breadcrumbs {
+  padding-bottom: 40px;
+}
+
+.page-contacts .page-contacts__breadcrumbs {
+  margin-top: -340px;
+}
+
+.wrapper {
+  min-width: 320px;
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.breadcrumbs ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(212, 212, 212, 0.4);
+  padding-bottom: 29px;
+}
+
+.breadcrumbs ul li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  line-height: normal;
+  font-weight: 400;
+  color: #eeeeee;
+}
+
+.breadcrumbs ul a {
+  color: #efefef !important;
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.84px;
+}
+
+.breadcrumbs ul li::after {
+  content: '/';
+  display: block;
+  margin: 0 5px;
+}
+
+
+
+
+
+.page-contacts .page-contacts-body {
+  position: relative;
+}
+
+.page-contacts .page-contacts-body .container .top {
+  display: flex;
+  margin-bottom: 186px;
+  position: relative;
+}
+
+.page-contacts .page-contacts-body .address {
+  width: 570px;
+  height: 522px;
+  background-color: rgba(24, 22, 22, 0.95);
+  position: relative;
+  padding: 70px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  z-index: 50;
+}
+
+ .address .bg-top {
+  background-image: url(http://dgt-store.com/wp-content/themes/dgt/img/bg-top.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 501px;
+  height: 322px;
+}
+
+.address .bg-bottom {
+  background-image: url(http://dgt-store.com/wp-content/themes/dgt/img/bg-bottom.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 550px;
+  height: 395px;
+}
+
+.address .address-content {
+  width: 100%;
+  max-width: 273px;
+  z-index: 100;
+
+}
+
+.address .title {
+  color: #efefef;
+  font-family: "Oswald";
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: start;
+}
+
+.address .office {
+  display: flex;
+  align-items: end;
+  margin-bottom: 15px;
+}
+
+.address .office-left {
+  color: #efefef;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 5px;
+  width: 31%;
+}
+
+.address .office-right {
+  color: #efefef;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 400;
+  width: 68%;
+  line-height: 18px;
+}
+
+.address .number-phone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.address .number-phone-left {
+  color: #efefef;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 5px;
+  width: 49%;
+}
+
+.address .number-phone-right {
+  color: #efefef;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 300;
+  width: 51%;
+}
+
+.address .mail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.address .mail-left {
+  color: #efefef;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 5px;
+  width: 19%;
+}
+
+.address .mail-right {
+  color: #efefef;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 300;
+  width: 80%;
+}
+
+.address .schedule {
+  margin-bottom: 25px;
+}
+
+.address .schedule-title {
+  margin-bottom: 15px;
+  color: #efefef;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.address .schedule-item {
+  color: #efefef;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.address .social-block-title {
+  color: #efefef;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 21px;
+}
+
+.page-contacts .page-contacts-body .top:after {
+  position: absolute;
+  content: url(http://dgt-store.com/wp-content/themes/dgt/img/dot_bg1.png);
+  bottom: -90px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.page-contacts .page-contacts-map {
+  z-index: 50;
+  max-width: 810px;
+  height: 522px;
+  width: 100%;
+}
+
+.page-contacts-body .bottom {
+  padding-bottom: 93px;
+  z-index: 100;
+  position: relative;
+  border-bottom: 1px solid #1c1c1c;
+}
+
+.contacts-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 800px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.page-contacts-body .right-image {
+  right: 0;
+  bottom: 175px;
+  width: 2312px;
+  height: 1219px;
+}
+
+.page-contacts-body .right-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.contacts-form .title {
+  color: #f6f6f6;
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-bottom: 41px;
+  text-align: center;
+  width: 100%;
+}
+
+.contacts-form .form-left {
+  width: 100%;
+  max-width: 390px;
+  margin-right: 20px;
+}
