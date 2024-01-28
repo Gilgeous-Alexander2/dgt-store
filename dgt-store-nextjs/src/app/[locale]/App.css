@@ -177,15 +177,14 @@ html {
   }
 
   .slick-track {
-    width: 80%
+    display: flex;
+  }
+  .slick-track2 {
+    display: none;
   }
 }
 
-@media (max-width: 650px) {
-  .slick-track{
-    width:80%
-  }
-}
+
 
 
 
@@ -248,6 +247,7 @@ html {
   .main-page .main-page-body .news .slide-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
 
@@ -381,14 +381,6 @@ html {
     height: 450px;
   }
 
-  .slick-track {
-    width: 80%;
-    display: none;
-  }
-
-  .slick-track2 {
-    width: 80%
-  }
 
   .main-page-body .news .news-block img {
     height: 150px;

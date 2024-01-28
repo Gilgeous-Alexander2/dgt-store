@@ -10,7 +10,6 @@ import Form from "../../../Components/Form"
 import { Swiper, SwiperSlide } from "swiper/react"
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
-import 'swiper/css'
 import { Navigation, Thumbs } from 'swiper/modules';
 import { useTranslations } from 'next-intl';
 
@@ -172,7 +171,7 @@ export default function Single_Car_page({ params }: {
                                         spaceBetween={50}
                                         className="mobileapp-slider"
                                         loop={true}>
-                                        <SwiperSlide style={{ height: '300px' }}>
+                                        <SwiperSlide >
                                             <div className="slide-item">
                                                 <div className="slide-content">
                                                     <div className="title">DGT - мобильное приложение</div>

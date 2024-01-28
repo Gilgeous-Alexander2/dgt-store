@@ -1,16 +1,18 @@
 'use client'
+import { useTranslation } from 'react-i18next';
 import { Link } from '@/navigation';
 import './CSS Styles/Header.css'
 import './CSS Styles/Media_requests.css'
 import 'swiper/css/free-mode';
 import 'swiper/css/scrollbar';
 import 'swiper/css'
+
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, FreeMode, Scrollbar, Mousewheel } from 'swiper/modules';
+import { FreeMode, Scrollbar, Mousewheel } from 'swiper/modules';
 import React from 'react';
 import { auto } from '../types';
 import logo from '../pics/logo.svg'
-
+import { useRouter,usePathname } from '@/navigation';
 import { useTranslations } from 'next-intl';
 
 
@@ -21,6 +23,8 @@ export default function Header() {
 
   const t = useTranslations();
 
+  const router = useRouter();
+  const pathname = usePathname();
 
   //const { t, i18n } = useTranslation();
   // const changeLanguage = (lang: any) => {
@@ -105,10 +109,10 @@ export default function Header() {
                 <div className="header-lang__dropdown">
                   <ul>
                     <li>
-                      <a /*onClick={() => changeLanguaget('ru')}*/>RU</a>
+                      <a onClick={() => router.push(pathname, { locale: "ru" })}>RU</a>
                     </li>
                     <li>
-                      <a /*onClick={() => changeLanguaget('en')}*/>EN</a>
+                      <a onClick={() => router.push(pathname, { locale: "en" })}>EN</a>
                     </li>
                   </ul>
                 </div>

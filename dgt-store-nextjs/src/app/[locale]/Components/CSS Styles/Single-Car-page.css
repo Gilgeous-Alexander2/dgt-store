@@ -230,7 +230,6 @@
 .app .slide-item {
     display: flex;
     align-items: center;
-    justify-content: center;
     padding: 0 30px;
 }
 
@@ -238,14 +237,14 @@
     width: 50%;
 }
 
-.app .slide .slide-item .slide-picture {
+.app .slide-item .slide-picture {
     width: 50%;
     height: auto;
 }
 
 .app .slide-item .slide-picture img {
 
-    height: 300px;
+    height: 50%;
     max-width: 100%;
     object-fit: unset;
 }
@@ -283,6 +282,7 @@
     font-weight: 400;
     color: #efefef;
     letter-spacing: 0.84px;
+    line-height: 1;
     max-width: 305px;
     width: 100%;
     margin-bottom: 20px;
@@ -293,8 +293,8 @@
 }
 
 .mobileapp-slider {
-    position: static !important;
-    display: grid !important;
+    position: static ;
+    display: grid 
 }
 
 .mobileapp-slider [class^="swiper-button-"] {
@@ -330,6 +330,15 @@
     line-height: 1;
 }
 
+.mobileapp-slider .swiper-wrapper {
+    align-items: center;
+}
+
+.mobileapp-slider .swiper-slide {
+    display: flex;
+    height: 300px;
+}
+
 .Vertical2{
     background-color: #eeeeee;
     width:25%;
@@ -360,7 +369,7 @@
   .Vertical2 .swiper-button-prev::after {
     color: grey;
     font-family: swiper-icons;
-    font-size: 30px;
+    font-size: 25px;
     text-transform: none !important;
     letter-spacing: 0;
     font-variant: initial;
@@ -385,6 +394,37 @@
     width:100%;
     padding:3% 9%;
 }
+
+.Vertical3 .swiper-button-next,
+.Vertical3 .swiper-button-prev {
+    transform-origin: center;
+    top:auto;
+    bottom:0px;
+    height:100%;
+    width:40px;
+    background-color: #eeeeee;
+  }
+
+  .Vertical3 .swiper-button-prev {
+    margin-left: -11px;
+  }
+  .Vertical3 .swiper-button-next {
+    margin-right: -11px;
+  }
+
+ 
+  .Vertical3 .swiper-button-next::after,
+  .Vertical3 .swiper-button-prev::after {
+    color: grey;
+    font-family: swiper-icons;
+    font-size: 25px;
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+    }
+
+
 
 .single-page .single-page-bottom {
     background-color: #0f0f0f;

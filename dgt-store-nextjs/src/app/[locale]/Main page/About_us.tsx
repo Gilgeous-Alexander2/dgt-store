@@ -8,7 +8,6 @@ export default function About_us() {
 
     const t = useTranslations();
 
-
     return <>
         <div id="about" className="container aos-init aos-animate" data-aos="fade-up">
             <div className="about">

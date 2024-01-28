@@ -218,8 +218,8 @@ ol {
 
 
 .header-slider{
-  position: static !important;
-  display: grid !important;
+  position: static ;
+  display: flex 
 }
 
 .header-slider .swiper-slide{
