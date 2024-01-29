@@ -1,17 +1,23 @@
 'use client'
-import Footer from "../../../Components/Footer"
-import Header from "../../../Components/Header"
+import React from 'react'
+import 'swiper/css'
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
+import 'swiper/css/free-mode';
+import 'swiper/css/effect-fade';
+
 import "../../../App.css"
 import "../../../Components/CSS Styles/Single-Car-page.css"
 import "../../../Components/CSS Styles/Single-Car-page-media.css"
-
-import React from 'react'
 import Form from "../../../Components/Form"
 import { Swiper, SwiperSlide } from "swiper/react"
-import 'swiper/css/navigation';
-import 'swiper/css/thumbs';
-import { Navigation, Thumbs } from 'swiper/modules';
+
+import  { useRef, useState } from 'react';
+import { Navigation, Thumbs, FreeMode, EffectFade} from 'swiper/modules';
 import { useTranslations } from 'next-intl';
+
+import Footer from "../../../Components/Footer"
+import Header from "../../../Components/Header"
 
 import singlebg from '../../../pics/single-bg.png'
 import min14 from '../../../pics/14-min-731x485.jpg'
@@ -25,8 +31,9 @@ export default function Single_Car_page({ params }: {
     params: { cars: string, car: string, Catalog: string }
 }) {
 
-    const [thumbsSwiper, setThumbsSwiper] = React.useState(null);
+    const [thumbsSwiper, setThumbsSwiper] = React.useState<any>(null);
     const  t  = useTranslations();
+
 
     return <>
     <Header></Header>
@@ -64,21 +71,28 @@ export default function Single_Car_page({ params }: {
                             <div className="left-block">
                                 <Swiper
                                     spaceBetween={10}
-                                    thumbs={{ swiper: thumbsSwiper }}
+                                    onSwiper={setThumbsSwiper}
+                                    freeMode={true}
+                                    effect='fade'
+                                    modules={[FreeMode,EffectFade]}
                                     className="Vertical1"
                                 >
                                     <SwiperSlide><img src={min14.src}></img></SwiperSlide>
+                                    <SwiperSlide><img src={p1.src}></img></SwiperSlide>
+                                    <SwiperSlide><img src={p2.src}></img></SwiperSlide>
+                                    <SwiperSlide><img src={p3.src}></img></SwiperSlide>
                                     <SwiperSlide><img src={min14.src}></img></SwiperSlide>
                                     <SwiperSlide><img src={min14.src}></img></SwiperSlide>
                                     <SwiperSlide><img src={min14.src}></img></SwiperSlide>
-
+                                    <SwiperSlide><img src={min14.src}></img></SwiperSlide>
                                 </Swiper>
                                 <Swiper
                                     spaceBetween={33}
                                     direction="vertical"
                                     navigation={true}
-                                    modules={[Navigation, Thumbs]}
+                                    modules={[Navigation, Thumbs,FreeMode]}
                                     className="Vertical2"
+                                    thumbs={{ swiper: thumbsSwiper }}
                                     slidesPerView={5}
                                     loop={true}
                                 >
@@ -93,8 +107,9 @@ export default function Single_Car_page({ params }: {
                                 <Swiper
                                     spaceBetween={30}
                                     navigation={true}
-                                    modules={[Navigation, Thumbs]}
+                                    modules={[Navigation, Thumbs,FreeMode]}
                                     slidesPerView={4}
+                                    thumbs={{ swiper: thumbsSwiper }}
                                     loop={true}
                                     className="Vertical3"
                                 >

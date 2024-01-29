@@ -147,6 +147,7 @@
         margin-right: 0;
         display: flex;
         justify-content: center;
+        margin-bottom: 15px;
     }
 
     .app .slide-item .slide-picture img {

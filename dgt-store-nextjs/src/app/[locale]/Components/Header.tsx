@@ -1,12 +1,10 @@
 'use client'
-import { useTranslation } from 'react-i18next';
+
 import { Link } from '@/navigation';
-import './CSS Styles/Header.css'
-import './CSS Styles/Media_requests.css'
 import 'swiper/css/free-mode';
 import 'swiper/css/scrollbar';
-import 'swiper/css'
-
+import './CSS Styles/Header.css'
+import './CSS Styles/Media_requests.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode, Scrollbar, Mousewheel } from 'swiper/modules';
 import React from 'react';
@@ -14,6 +12,7 @@ import { auto } from '../types';
 import logo from '../pics/logo.svg'
 import { useRouter,usePathname } from '@/navigation';
 import { useTranslations } from 'next-intl';
+
 
 
 
