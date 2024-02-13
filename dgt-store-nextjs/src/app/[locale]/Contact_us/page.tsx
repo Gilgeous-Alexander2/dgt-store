@@ -23,7 +23,7 @@ export default function Contact_us() {
                 <div className="page-contacts__head">
                     <div className="img-wrapper">
                         <img src={contactsmain.src}></img>
-                        <nav className="breadcrumbs page-contacts__breadcrumbs">
+                        <nav className={`breadcrumbs page-contacts__breadcrumbs`}>
                             <div className="wrapper">
                                 <ul className="breadcrumbs">
                                     <li>
@@ -43,11 +43,11 @@ export default function Contact_us() {
                     <div className="container">
                         <div className="top">
                             <div className="page-contacts-map">https://goo.gl/maps/HxQ4SPT6rQn4YZp16</div>
-                            <div className="address">
+                            <div className={`address`}>
                                 <div className="bg-top"></div>
                                 <div className="bg-bottom"></div>
                                 <div className="address-content">
-                                    <div className="title">DGT - Exhaust System</div>
+                                    <div className={`title`}>DGT - Exhaust System</div>
                                     <div className="office">
                                         <div className="office-left">{t('Contact_us.Contact_card.office.title')}</div>
                                         <div className="office-right">{t('Contact_us.Contact_card.office.content')}</div>

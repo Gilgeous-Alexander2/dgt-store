@@ -6,6 +6,7 @@ import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, FreeMode, Scrollbar, Mousewheel } from 'swiper/modules';
 import { New } from "../types";
+import '../Main page/CSS Styles/News.css'
 
 export default function New(props: New) {
     return (
@@ -17,6 +18,7 @@ export default function New(props: New) {
                     <Swiper
                         direction={'vertical'}
                         slidesPerView={'auto'}
+                        className="PidorSwiper"
                         freeMode={true}
                         scrollbar={true}
                         mousewheel={true}

@@ -1,9 +1,9 @@
-import Header from "./Header"
-import Footer from "./Footer"
-
-import "../Components/CSS Styles/Media_requests.css"
-import "../App.css"
+'use client'
 import React from 'react'
+
+import '@/app/[locale]/Components/CSS Styles/Header.css'
+import "./CSS Styles/Media_requests.css"
+import "../App.css"
 import "./CSS Styles/Many-Cars-page.css"
 import "./CSS Styles/Many_Cars_page_Media.css"
 import { Link } from "@/navigation"
@@ -11,6 +11,9 @@ import { CarModel } from "../types"
 import { useTranslations } from "next-intl"
 import maincatalog from '../pics/main_image_catalog.png'
 import a3 from '../pics/2016-audi-a3-wallpaper-hd-57804-1597078-612x406.jpg'
+
+import Header from "./Header"
+import Footer from "./Footer"
 
 
 type CarPageLayout = {
@@ -32,7 +35,7 @@ export const CarPageLayout = (props: CarPageLayout) => {
                     <div className="img-wrapper">
                         <img src={maincatalog.src} ></img>
                     </div>
-                    <nav className="breadcrumbs page-contacts__breadcrumbs">
+                    <nav className={` breadcrumbs page-contacts__breadcrumbs`}>
                         <div className="wrapper">
                             <ul className="breadcrumbs">
                                 <li>
@@ -64,7 +67,7 @@ export const CarPageLayout = (props: CarPageLayout) => {
                                         <img src={a3.src}></img>
                                     </div>
 
-                                    <div className="car-block-content">
+                                    <div className=" car-block-content">
                                         <div className="title">{card.name}</div>
                                         <div className="exhaust">
                                             <span>{t('Auto_card.Engine')}</span>

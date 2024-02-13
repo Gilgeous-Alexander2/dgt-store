@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Lato";
+  src: url('/src/app/ui/Lato/Lato-Medium.ttf') format('truetype');
+}
 .news {
     margin-top: 140px;
     margin-bottom: 148px;
@@ -51,7 +55,6 @@
   
   .news h2 {
     color: #efefef;
-    font-family: "Oswald";
     font-size: 34px;
     font-weight: 700;
     letter-spacing: 0.34px;
@@ -124,7 +127,6 @@
     text-align: center;
     margin-bottom: 28px;
     color: #efefef;
-    font-family: "Oswald";
     font-size: 16px;
     font-weight: 400;
     line-height: 21px;
@@ -166,12 +168,12 @@
   text-align: left;
 }
 
-.swiper {
+.PidorSwiper {
   width: 100%;
   height: 190px;
 }
 
-.swiper-slide {
+.PidorSwiper .swiper-slide {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-right: 30px;

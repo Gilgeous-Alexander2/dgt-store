@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import NextIntlProvider from './NextIntlProvider'
 import { useMessages } from 'next-intl'
+import { oswald } from '../ui/fonts'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,8 +27,10 @@ export default function RootLayout({
   const messages= useMessages();
 
   return (
+    
     <html lang={params.locale} style={{ fontSize: '62.5%' }}>
-      <body className={inter.className}>
+      <link rel="icon" href="/favicon.ico" sizes="any" />
+      <body className={oswald.className}>
         <NextIntlProvider
         locale={params.locale}
         messages={messages}

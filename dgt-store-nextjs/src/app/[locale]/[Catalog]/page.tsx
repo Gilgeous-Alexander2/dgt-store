@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import Link from "next/link"
+
 import { CarPageLayout } from "../Components/Car_page_layout"
 import { CarCardData, CarDataBase, CarModel } from "../types"
 import { auto } from "../types"

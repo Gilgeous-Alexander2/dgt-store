@@ -179,12 +179,17 @@ html {
   .slick-track {
     display: flex;
   }
+
   .slick-track2 {
     display: none;
   }
 }
 
-
+@media (max-width: 914px) {
+  .header .mobile-button {
+    display:block;
+  }
+}
 
 
 
@@ -277,7 +282,25 @@ html {
 
 
 
+@media (max-width: 580px) {
+  .header .mobile-menu {
+    padding: 15px;
+  }
 
+  .header .mobile-menu .mobile-menu-item {
+    margin-top: 25px;
+  }
+
+  .header .mobile-menu ul.mobile-menu-list {
+    padding-bottom: 25px;
+  }
+
+  .header .mobile-menu .header-socials {
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+  }
+}
 
 
 
@@ -437,7 +460,6 @@ img {
 
 .dealers h3 {
   color: #efefef;
-  font-family: "Oswald";
   font-size: 34px;
   font-weight: 700;
   line-height: 43px;
@@ -456,7 +478,6 @@ img {
   text-align: center;
   margin-bottom: 28px;
   color: #efefef;
-  font-family: "Oswald";
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;

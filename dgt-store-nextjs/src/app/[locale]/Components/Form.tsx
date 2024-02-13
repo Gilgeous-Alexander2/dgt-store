@@ -1,7 +1,6 @@
 import './CSS Styles/Form.css'
 import { useTranslations } from 'next-intl';
 
-
 export default function Form(){
 
     const t = useTranslations();
@@ -10,8 +9,8 @@ export default function Form(){
     <div className="bottom">
         <div className="contacts-form">
             <form>
-                <div className="title">{t('Form.Title')}</div>
-                <div className="form-left">
+                <div className={`title`}>{t('Form.Title')}</div>
+                <div className={`form-left`}>
                     <span>
                         <input type="text" placeholder={t('Form.Name')}></input>
                     </span>
@@ -25,7 +24,7 @@ export default function Form(){
                         <input type="text" placeholder={t('Form.Country')}></input>
                     </span>
                 </div>
-                <div className="form-right">
+                <div className={` form-right`}>
                     <span>
                         <input type="text" placeholder={t('Form.Model')}></input>
                     </span>

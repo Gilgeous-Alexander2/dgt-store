@@ -1,7 +1,5 @@
-'use client'
 import Footer from "../Components/Footer"
 import Videos from "./Videos"
-import React from "react"
 import Main_page_head from "./Main-page-head"
 import GoogleMap, { Marker } from "./DealersMap"
 import Advantages from "./Advantages"
@@ -16,7 +14,7 @@ export default function Body() {
     const Markers: Marker[] = [{
         Name: 'FAMILY WORKS Барнаул', address: 'Шевченко 135, Барнаул', phone: "+7 (923)641-11-44",
         instagramm: 'https://www.instagram.com/fworks_tuning/',
-        website: 'https://vk.com/fworks_tuning', coordinates: [53.340076, 83.75845], email: ''
+        website: 'https://vk.com/fworks_tuning', coordinates: [53.340076, 83.75845]
       },
     
       {
@@ -28,25 +26,25 @@ export default function Body() {
       {
         Name: 'MORENDI Красноярск', address: 'Красноярск .проспект Котельникова 21Б',
         phone: "+7 (391) 2545-000", instagramm: 'https://www.instagram.com/morendi_krasnoyarsk/?hl=ru',
-        website: '', coordinates: [56.047258, 92.839133], email: ''
+        coordinates: [56.047258, 92.839133], 
       },
     
       {
         Name: 'Morendi Ural', address: 'Екатеринбург, Улица 8 Марта, 14',
         phone: "8 953 822-53-68", instagramm: 'https://instagram.com/morendi_ural?igshid=19o87lj0xqwxl',
-        website: '', coordinates: [56.832895, 60.5999], email: ''
+        coordinates: [56.832895, 60.5999], 
       },
     
       {
         Name: 'Custom Unlimited', address: 'Самара, Кабельная 4к7',
         phone: "+7 846 205-54-54", instagramm: 'https://instagram.com/customunlimited?igshid=1wzd8yrbmfh0c',
-        website: '', coordinates: [53.195355, 50.267963], email: ''
+        coordinates: [53.195355, 50.267963], 
       },
     
       {
         Name: 'Morendi N.Novgorod', address: 'Нижний Новгород, Московское шоссе 105к5',
         phone: "+7 831 235-66-01", instagramm: 'https://instagram.com/morendi.nn?igshid=1kgifz66uhmrm',
-        website: '', coordinates: [56.319669, 43.907423], email: ''
+        coordinates: [56.319669, 43.907423], 
       },
     
       {
@@ -58,7 +56,7 @@ export default function Body() {
       {
         Name: 'TopArtTuning', address: 'Тверь, Пр-д Стеклопластиков, 5',
         phone: "8-920-152-44-22", instagramm: 'https://instagram.com/toparttuning?igshid=lvvp4t3bpnwi',
-        website: '', coordinates: [56.859561, 35.911851], email: 'Topcardetailing@yandex.ru'
+        coordinates: [56.859561, 35.911851], email: 'Topcardetailing@yandex.ru'
       },
     
       {
@@ -70,19 +68,19 @@ export default function Body() {
       {
         Name: 'RE-MARK Studio', address: 'г. Воронеж ул. Солнечная, 23',
         phone: "+7(473)228-54-64", instagramm: 'https://www.instagram.com/remarkstudio/',
-        website: 'https://remark-studio.ru/', coordinates: [51.683491, 39.165262], email: ''
+        website: 'https://remark-studio.ru/', coordinates: [51.683491, 39.165262], 
       },
     
       {
         Name: 'TopLevelMotorsport', address: 'Украина, г. Киев, ул. Ракетная, 24 А',
         phone: "+380 67 440 3685", instagramm: 'https://instagram.com/toplevelmotorsport?igshid=1ler5mtglnalx',
-        website: 'https://top-level.ua/', coordinates: [50.383344, 30.544256], email: ''
+        website: 'https://top-level.ua/', coordinates: [50.383344, 30.544256], 
       },
     
       {
         Name: 'ProTuningCompany ', address: 'Светлая ул., Знаменский',
         phone: "+7 861 298 26 85", instagramm: 'https://www.instagram.com/protuningcompany/',
-        website: '', coordinates: [45.059058, 39.144906], email: 'nfo@protuning-company.ru'
+        coordinates: [45.059058, 39.144906], email: 'nfo@protuning-company.ru'
       }]
     
       const t = useTranslations()

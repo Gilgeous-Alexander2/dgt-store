@@ -110,6 +110,14 @@
     "Year": "Year",
     "Engine": "Engine/body",
     "Material": "Material",
-    "Price": "Price"
+    "Price": "Price",
+    "Swiper": {
+      "title": "Control the DGT exhaust system from your smartphone",
+      "title2":"DGT - mobile app",
+      "s1": "The application allows you to control the sound of the exhaust system.",
+      "s2": "The exhaust system can be easily switched to silent mode with the flap closed. Turning on the open flap starts the mode with a deep resonant sound.",
+      "s3": "The flap can be opened at an angle of 35 degrees. Automatic and manual modes are available, in which you can adjust the engine speed to open the flap."
+      
+    }
   }
 }

@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Lato";
+    src: url('/src/app/ui/Lato/Lato-Medium.ttf') format('truetype');
+}
 .main .single-page {
     display: block;
     overflow: hidden;
@@ -24,7 +28,7 @@
 .single-page .single-page-head .breadcrumbs ul {
     padding-bottom: 0;
     border-bottom: 0;
-
+    font-family: "Lato";
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -52,7 +56,6 @@
     -webkit-align-items: flex-start;
     -ms-flex-align: start;
     align-items: flex-start;
-    font-family: "Lato", sans-serif;
     font-size: 1.4rem;
     line-height: normal;
     font-weight: 400;
@@ -134,8 +137,8 @@
 
 .single-page .single-page-body h3 {
     color: #181616;
-    font-family: "Lato";
     font-size: 18px;
+    font-family: "Lato";
     font-weight: 700;
     letter-spacing: 1.08px;
     margin-bottom: 29px;
@@ -143,6 +146,7 @@
 
 .single-page .single-page-body .long-text {
     margin-bottom: 58px;
+    font-family: "Lato";
 }
 
 .single-page .single-page-body .long-text p {
@@ -194,7 +198,7 @@
     background-color: #181616;
     position: relative;
     margin: auto;
-    padding: 15px 120px;
+    padding: 15px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -230,7 +234,7 @@
 .app .slide-item {
     display: flex;
     align-items: center;
-    padding: 0 30px;
+    padding: 0 120px;
 }
 
 .app .slide-item .slide-content {
@@ -292,52 +296,7 @@
     margin-bottom: 0;
 }
 
-.mobileapp-slider {
-    position: static ;
-    display: grid 
-}
 
-.mobileapp-slider [class^="swiper-button-"] {
-    inset: initial;
-    margin: 0;
-    align-self: center;
-}
-
-.mobileapp-slider .swiper-button-prev {
-    justify-self: start;
-    margin-left: -120px;
-    background-color: rgba(255, 255, 255, 0.05);
-    width: 48px;
-    height: 119px;
-}
-
-.mobileapp-slider .swiper-button-next {
-    justify-self: end;
-    margin-right: -120px;
-    background-color: rgba(255, 255, 255, 0.05);
-    width: 48px;
-    height: 119px;
-}
-
-.mobileapp-slider .swiper-button-prev:after,
-.mobileapp-slider .swiper-button-next:after {
-    color: grey;
-    font-family: swiper-icons;
-    font-size: 30px;
-    text-transform: none !important;
-    letter-spacing: 0;
-    font-variant: initial;
-    line-height: 1;
-}
-
-.mobileapp-slider .swiper-wrapper {
-    align-items: center;
-}
-
-.mobileapp-slider .swiper-slide {
-    display: flex;
-    height: 300px;
-}
 
 .Vertical2{
     background-color: #eeeeee;
@@ -352,18 +311,18 @@
     left: 50%;
     transform: rotate(90deg);
     transform-origin: left center;
-    height:150px;
-    width:35px;
+    height:190px;
+    width:45px;
     background-color: #eeeeee;
   }
   .Vertical2 .swiper-button-prev{
-    top: -53px;
+    top: -75px;
     padding-left: 9px;
   }
   .Vertical2 .swiper-button-next{
     top: auto;
     padding-right: 9px;
-    bottom: -40px;
+    bottom: -62px;
   }
   .Vertical2 .swiper-button-next::after,
   .Vertical2 .swiper-button-prev::after {
@@ -388,8 +347,11 @@
     width:85%;
 }
 
+.Vertical32 {
+    display:none
+}
+
 .Vertical3 {
-    display:none;
     background-color: #eeeeee;
     width:100%;
     padding:3% 9%;

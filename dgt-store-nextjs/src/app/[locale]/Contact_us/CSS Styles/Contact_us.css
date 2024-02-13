@@ -1,3 +1,9 @@
+
+@font-face {
+  font-family: "Lato";
+  src: url('/src/app/ui/Lato/Lato-Medium.ttf') format('truetype');
+}
+
 .main .page-contacts {
   display: block;
   overflow: hidden;
@@ -57,7 +63,7 @@
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato";
   font-size: 1.4rem;
   line-height: normal;
   font-weight: 400;
@@ -139,7 +145,6 @@
 
 .address .title {
   color: #efefef;
-  font-family: "Oswald";
   font-size: 23px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -290,7 +295,7 @@
 
 .contacts-form .title {
   color: #f6f6f6;
-  font-family: "Lato";
+  
   font-size: 20px;
   font-weight: 700;
   line-height: 22px;

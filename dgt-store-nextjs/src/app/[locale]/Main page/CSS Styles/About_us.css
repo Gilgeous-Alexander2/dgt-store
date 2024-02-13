@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Lato";
+  src: url('/src/app/ui/Lato/Lato-Medium.ttf') format('truetype');
+}
 .about {
     max-width: 1081px;
     width: 100%;
@@ -17,7 +21,6 @@
   
   .title1 {
     color: #efefef;
-    font-family: "Oswald";
     font-size: 34px;
     font-weight: 700;
     line-height: 32px;

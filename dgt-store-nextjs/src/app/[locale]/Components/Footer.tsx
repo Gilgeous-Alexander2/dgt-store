@@ -1,6 +1,7 @@
 import './CSS Styles/Footer.css'
 import './CSS Styles/Media_requests.css'
 import { Link } from '@/navigation';
+import { useRouter, usePathname } from '@/navigation';
 import React from 'react';
 
 import { useTranslation, Trans } from 'react-i18next';
@@ -12,15 +13,15 @@ import { useTranslations } from 'next-intl';
 
 export default function Footer() {
 
-    const  t  = useTranslations();
-    // const changeLanguage = (lang: any) => {
-    //     i18n.changeLanguage(lang);
-    // }
+    const t = useTranslations();
+
+    const router = useRouter();
+    const pathname = usePathname();
 
 
     return <>
         <footer className="footer">
-        <div className="footer-top">
+            <div className="footer-top">
                 <div className="footer-container">
                     <ul className="footer-socials socials">
                         <li><a className="socials a" style={{ backgroundImage: "url('http://dgt-store.com/wp-content/uploads/2019/08/icon-instagram.svg')" }}>vk</a></li>
@@ -33,8 +34,9 @@ export default function Footer() {
                 <div className="footer-container">
                     <div className="footer-bottom-content">
                         <div className="footer-logo">
-                            <a href="http://dgt-store.com"></a>
-                            <img src={logo.src}></img>
+                            <a href="/">
+                                <img src={logo.src}></img>
+                            </a>
                         </div>
                         <nav className="footer-nav">
                             <ul className="footer-nav-list">
@@ -49,16 +51,16 @@ export default function Footer() {
                                 <div className="footer-lang__dropdown">
                                     <ul>
                                         <li>
-                                            <a /*onClick={() => changeLanguaget('ru')}*/>RU</a>
+                                            <a onClick={() => router.push(pathname, { locale: "ru" })}>RU</a>
                                         </li>
                                         <li>
-                                            <a /*onClick={() => changeLanguaget('en')}*/>EN</a>
+                                            <a onClick={() => router.push(pathname, { locale: "en" })}>ENG</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </nav>
-                        <div className="footer-contacts">
+                        <div className={`footer-contacts`}>
                             <a href="tel:+7 (499) 380-71-11">7 (499) 380 71 11</a>
                             <a href="mailto:Info@dgt-store.ru">Info@dgt-store.ru</a>
                         </div>

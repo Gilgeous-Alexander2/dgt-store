@@ -12,6 +12,7 @@ import ReactLeafletGoogleLayer from 'react-leaflet-google-layer';
 import 'leaflet/dist/leaflet.css';
 import './CSS Styles/DealersMap.css'
 import 'swiper/css';
+import { oswald } from '@/app/ui/fonts'
 
 export type Marker={
   
@@ -54,30 +55,30 @@ export default function GoogleMap(props: Googlemapprops) {
                 <div className="point-block">
                   <div className="point-block-img"></div>
                   <div className="point-block-content">
-                    <div className="title">{item.Name}</div>
+                    <div className={`${oswald.className} title`}>{item.Name}</div>
                     <div className="address">{item.address}</div>
                     <div className="contact-information">
-                      <div className="title">Контактная информация</div>
+                      <div className="title">Контактная информация:</div>
                       <div className="contact-information-item">
-                        <div className="left">Телефон</div>
+                        <div className="left">Телефон:</div>
                         <div className="right">
                           <a href={item.phone}>{item.phone}</a>
                         </div>
                       </div>
                       <div className="contact-information-item">
-                        <div className="left">Instagram</div>
+                        <div className="left">Instagram:</div>
                         <div className="right">
                           <a href={item.instagramm}>{item.instagramm}</a>
                         </div>
                       </div>
                       <div className="contact-information-item">
-                        <div className="left">Веб-сайт</div>
+                        <div className="left">Веб-сайт:</div>
                         <div className="right">
                           <a href={item.website}>{item.website}</a>
                         </div>
                       </div>
                       <div className="contact-information-item">
-                        <div className="left">E-mail</div>
+                        <div className="left">E-mail:</div>
                         <div className="right">
                           <a href={item.email}>{item.email}</a>
                         </div>
