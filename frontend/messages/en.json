@@ -1,0 +1,123 @@
+{
+  "Main_page": {
+    "header": {
+      "about_us": "About us",
+      "Catalog": "Catalog",
+      "News": "News",
+      "Video": "Video",
+      "Dealers": "Dealers",
+      "Contacts": "Contacts"
+    },
+    "lng": "en",
+    "Main_page_head": {
+      "title": "Sports exhaust systems",
+      "undertitle": "for cars."
+    },
+    "About_us": {
+      "about": {
+        "title": "About us",
+        "content": {
+          "1": "Night, empty streets, ringing silence and your car.",
+          "2": "What will you choose — loud high-quality sound or silent driving?",
+          "3": "With DGT exhaust systems, you will feel like the king of the road. You create the sound of your mood yourself."
+        },
+        "content2": {
+          "1": "The Slovenian DGT brand is an ideal replacement for the standard exhaust system.",
+          "2": "The products are manufactured in Taiwan. The standard system is scanned at the manufacturer's factory. This creates a 3D model that accurately reproduces the original. According to the resulting layout, a new exhaust system is being designed, ideally replacing the standard one."
+        }
+      },
+      "how_to_control": {
+        "title": "How to control?",
+        "content": "You can control the DGT exhaust system from a mobile application and from a remote control. There are three modes available, one of which opens the flap at an angle of 35 degrees. The function of manual adjustment of engine speed is working."
+      },
+      "how_to_order": {
+        "title": "How to order?",
+        "content": "Smart, eco-friendly, reliable DGT exhaust systems can be ordered on the official website, by phone or at the sales office. The order is made in advance: 50% of the cost. Delivery is up to two weeks."
+      },
+      "installation": {
+        "title": "Exhaust system installation:",
+        "content": {
+          "1": "We will install it on the day of receipt of the order.",
+          "2": "Installation is carried out in regular places. This means that the previous design, if desired, can be returned back, without harm to the car."
+        }
+      },
+      "guarantees": {
+        "title": "Guarantees:",
+        "content": {
+          "1": "The warranty on the exhaust system is 2 years",
+          "2": "The products comply with Russian and European environmental standards and quality standards."
+        }
+      }
+    },
+    "News": "Our news",
+    "Video": "Videos",
+    "Advantages": {
+      "title": "Advantages",
+      "1": "Quality assurance",
+      "2": "Reasonable prices",
+      "3": "Experienced staff",
+      "4": "Great service",
+      "5": "Convenient location",
+      "6": "3 sound levels"
+    },
+    "Dealers": "Our dealers",
+    "Read_more": "Read more",
+    "userMessagesUnread_one": "You have {{count}} unread message.",
+    "userMessagesUnread_other": "You have {{count}} unread messages."
+  },
+  "Contact_us": {
+    "Contact_card": {
+      "office": {
+        "title": "Our office:",
+        "content": "Moscow, Kyiv street, 14 с4"
+      },
+      "number": {
+        "title": "Phone number:",
+        "content": "+7(499) 380-71-11"
+      },
+      "mail": {
+        "title": "E-mail:",
+        "content": "Info@dgt-store.ru"
+      },
+      "schedule": {
+        "title": "Work schedule:",
+        "content": "Tue.-Sun. C 10:00 до 21:00"
+      },
+      "schedule_item": {
+        "title": "",
+        "content": "Mon. Weekend"
+      },
+      "follow_us": "Follow us:"
+    }
+  },
+  "Form": {
+    "Name": "Name",
+    "Phone": "Phone",
+    "City": "City",
+    "Country": "Country",
+    "Model": "Auto model",
+    "Questions": "Questions",
+    "Send": "Submit",
+    "Title": "If you have any questions, please fill out the request form below"
+  },
+  "Auto_card": {
+    "Engine": "Engine:",
+    "Year": "Year:",
+    "Go_over": "Go over"
+  },
+  "Car_page": {
+    "Brand": "Brand/model",
+    "Year": "Year",
+    "Engine": "Engine/body",
+    "Material": "Material",
+    "Price": "Price",
+    "Swiper": {
+      "title": "Control the DGT exhaust system from your smartphone",
+      "title2":"DGT - mobile app",
+      "s1": "The application allows you to control the sound of the exhaust system.",
+      "s2": "The exhaust system can be easily switched to silent mode with the flap closed. Turning on the open flap starts the mode with a deep resonant sound.",
+      "s3": "The flap can be opened at an angle of 35 degrees. Automatic and manual modes are available, in which you can adjust the engine speed to open the flap."
+      
+    }
+  }
+}

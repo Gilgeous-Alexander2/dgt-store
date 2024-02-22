@@ -1,0 +1,46 @@
+.mobileapp-slider {
+    position: static ;
+    display: grid 
+}
+
+.mobileapp-slider [class^="swiper-button-"] {
+    inset: initial;
+    margin: 0;
+    align-self: center;
+}
+
+.mobileapp-slider .swiper-button-prev {
+    justify-self: start;
+    margin-left: 0px;
+    background-color: rgba(255, 255, 255, 0.05);
+    width: 48px;
+    height: 119px;
+}
+
+.mobileapp-slider .swiper-button-next {
+    justify-self: end;
+    margin-right: 0px;
+    background-color: rgba(255, 255, 255, 0.05);
+    width: 48px;
+    height: 119px;
+}
+
+.mobileapp-slider .swiper-button-prev:after,
+.mobileapp-slider .swiper-button-next:after {
+    color: grey;
+    font-family: swiper-icons;
+    font-size: 30px;
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+}
+
+.mobileapp-slider .swiper-wrapper {
+    align-items: center;
+}
+
+.mobileapp-slider .swiper-slide {
+    display: flex;
+    height: 300px;
+}
