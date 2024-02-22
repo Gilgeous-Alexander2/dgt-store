@@ -90,7 +90,7 @@
   
   .advantage:after {
     position: absolute;
-    content: url(http://dgt-store.com/wp-content/themes/dgt/img/smoke.png);
+    content: url(../../pics/smoke.png);
     z-index: -1;
     bottom: -148px;
     right: 0;

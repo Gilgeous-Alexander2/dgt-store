@@ -15,7 +15,7 @@ export default function Advantages() {
     const t = useTranslations();
 
     return <>
-        <div className="advantage" style={{ backgroundImage: "url('../pics/smoke.png')" }}>
+        <div className="advantage" >
             <div className="container">
                 <h2>{t('Main_page.Advantages.title')}</h2>
                 <div className="advantage-content">

@@ -54,6 +54,9 @@
     font-weight: 400;
     color: #eeeeee;
   }
+  .breadcrumbs ul li a:hover {
+    text-decoration: underline;
+  }
   .breadcrumbs ul a {
     color: #efefef !important;
     font-family: "Lato";

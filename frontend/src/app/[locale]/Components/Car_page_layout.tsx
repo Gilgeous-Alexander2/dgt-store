@@ -39,18 +39,16 @@ export const CarPageLayout = (props: CarPageLayout) => {
                         <div className="wrapper">
                             <ul className="breadcrumbs">
                                 <li>
-                                    <a>
-                                        <span>Главная</span>
-                                    </a>
+                                    <Link href='/'>Главная</Link>
                                 </li>
                                 { props.rootpath? 
                                     <li className="not-active">
-                                        <a>{props.rootpath}</a>
+                                        <Link href={`/${props.rootpath}`}>{props.rootpath}</Link>
                                     </li>
                                     : null
                                 }
                                 <li className="not-active">
-                                    <a>{props.path}</a>
+                                    <Link href={`/${props.rootpath}/${props.path}`}>{props.path}</Link>
                                 </li>
                             </ul>
                         </div>

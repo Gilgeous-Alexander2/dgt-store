@@ -1,3 +1,4 @@
+
 import marker from '../marker.png'
 import React from 'react'
 import { MapContainer } from 'react-leaflet/MapContainer'
@@ -40,7 +41,6 @@ export default function GoogleMap(props: Googlemapprops) {
   })
 
   return <>
-  
     
       <div className="dealers-map-block">
         <MapContainer id="dealers" className="dealers-map-block" center={props.coordinates} zoom={props.zoom} scrollWheelZoom={false}>
@@ -48,8 +48,8 @@ export default function GoogleMap(props: Googlemapprops) {
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
-          {props.markers.map((item) =>
-            < Marker position={item.coordinates} icon={myIcon}>
+          {props.markers.map((item,itemid) =>
+            < Marker key={itemid} position={item.coordinates} icon={myIcon}>
               
               <Popup className='custom-popup'>
                 <div className="point-block">

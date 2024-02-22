@@ -68,7 +68,7 @@ export default function Header() {
                 <ul className="sub-menu">
                   {
                     auto.map((item: any, itemid: number) => (
-                      <li key={itemid} className="has-sub-menu">
+                      <li className="has-sub-menu">
                         <Link href={`/${item.name}`} >
                           <img src={item.img} ></img>
                           {item.name}
@@ -77,6 +77,7 @@ export default function Header() {
                         <div className={`sub-menu-wrapper`}>
                           <ul className="sub-menu">
                             <Swiper
+                          key={itemid}
                               style={{
                                 "--swiper-scrollbar-drag-bg-color": "rgba(255, 0, 0)",
                                 "maxHeight": "190px"
@@ -88,6 +89,7 @@ export default function Header() {
                               scrollbar={true}
                               mousewheel={true}
                               modules={[ FreeMode, Mousewheel,Scrollbar]}
+                              
                             >
                               {item.models.map((model: any, modelid: number) =>
                                 <SwiperSlide style={{ height: 'auto', width: '95%' }}>
