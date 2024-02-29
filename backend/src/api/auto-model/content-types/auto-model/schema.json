@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "auto_models",
+  "info": {
+    "singularName": "auto-model",
+    "pluralName": "auto-models",
+    "displayName": "Auto model",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "model": {
+      "type": "string"
+    },
+    "auto_mark": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::auto-mark.auto-mark",
+      "inversedBy": "auto_models"
+    }
+  }
+}

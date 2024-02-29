@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "auto_marks",
+  "info": {
+    "singularName": "auto-mark",
+    "pluralName": "auto-marks",
+    "displayName": "Auto mark",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Mark": {
+      "type": "string"
+    },
+    "auto_models": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::auto-model.auto-model",
+      "mappedBy": "auto_mark"
+    }
+  }
+}

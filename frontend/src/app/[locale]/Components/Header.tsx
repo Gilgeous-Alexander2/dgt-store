@@ -18,7 +18,11 @@ import { useRouter, usePathname } from '@/navigation';
 import { useTranslations } from 'next-intl';
 
 
-
+export async function GetData(){
+  const data = await fetch('http://localhost:1337/api/auto-marks')
+  const res = await data.json()
+  console.log(res)
+}
 
 
 export default function Header() {
@@ -35,6 +39,7 @@ export default function Header() {
   // }
 
   const count = 3;
+  {GetData()}
 
   const [sost, setSost] = React.useState(false)
   const [sost2, setSost2] = React.useState(false)
