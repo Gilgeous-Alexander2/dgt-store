@@ -20,6 +20,7 @@ type CarPageLayout = {
     cards?: CarModel[]
     path: string[]
     rootpath?: string[]
+    // res?: any
 }
 
 
@@ -28,7 +29,7 @@ export const CarPageLayout = (props: CarPageLayout) => {
     const t = useTranslations();
 
     return <>
-        <Header></Header>
+        <Header ></Header>
         <main className="main">
             <section className="page-single-catalog">
                 <div className="page-single-catalog__head">
@@ -39,7 +40,7 @@ export const CarPageLayout = (props: CarPageLayout) => {
                         <div className="wrapper">
                             <ul className="breadcrumbs">
                                 <li>
-                                    <Link href='/'>Главная</Link>
+                                    <Link href='/'>{t('Main_page.header.Main')}</Link>
                                 </li>
                                 { props.rootpath? 
                                     <li className="not-active">

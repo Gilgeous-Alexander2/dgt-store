@@ -1,4 +1,5 @@
 'use client'
+
 import Footer from "../Components/Footer"
 import "../Components/CSS Styles/Media_requests.css"
 import React from "react"
@@ -10,14 +11,23 @@ import Form from "../Components/Form"
 import { useTranslations } from 'next-intl';
 import contactsmain from '../pics/bg-page-contacts-main.png'
 import img2 from '../pics/Image_2.png'
-
+import Link from "next/link"
 
 export default function Contact_us() {
+
+    // const res = await fetch('http://localhost:1337/api/auto-marks?populate=*')
+    // const res2 = await res.json()
+
+
+    // if (!res.ok) {
+    //   // This will activate the closest `error.js` Error Boundary
+    //   throw new Error('Failed to fetch data')
+    // }
 
     const t = useTranslations();
 
     return <>
-        <Header></Header>
+        <Header ></Header>
         <main className="main">
             <section className="page-contacts">
                 <div className="page-contacts__head">
@@ -27,13 +37,9 @@ export default function Contact_us() {
                             <div className="wrapper">
                                 <ul className="breadcrumbs">
                                     <li>
-                                        <a>
-                                            <span>Главная</span>
-                                        </a>
+                                        <Link href='/'>{t('Main_page.header.Main')}</Link>
                                     </li>
-                                    <li className="not-active">
-                                        <a>Контакты</a>
-                                    </li>
+                                    <li><a>{t('Main_page.header.Contacts')}</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -42,7 +48,7 @@ export default function Contact_us() {
                 <div className="page-contacts-body">
                     <div className="container">
                         <div className="top">
-                            <div className="page-contacts-map">https://goo.gl/maps/HxQ4SPT6rQn4YZp16</div>
+                            <div className="page-contacts-map"></div>
                             <div className={`address`}>
                                 <div className="bg-top"></div>
                                 <div className="bg-bottom"></div>
@@ -72,9 +78,9 @@ export default function Contact_us() {
                                     <div >
                                         <div className="social-block-title">{t('Contact_us.Contact_card.follow_us')}</div>
                                         <ul className="socials" style={{ display: 'flex' }}>
-                                            <li><a className="socials a" style={{ backgroundImage: "url('http://dgt-store.com/wp-content/uploads/2019/08/icon-instagram.svg')" }}>vk</a></li>
-                                            <li><a className="socials a" style={{ backgroundImage: "url('http://dgt-store.com/wp-content/uploads/2019/08/icon-facebook.svg')" }}>vk</a></li>
-                                            <li><a className="socials a" style={{ backgroundImage: "url('http://dgt-store.com/wp-content/uploads/2019/08/icon-youtube.svg')" }}>vk</a></li>
+                                            <li><a className="socials a" style={{ backgroundImage: "url('https://img.icons8.com/?size=25&id=F4ZPUh2Mk5tk&format=png&color=FFFFFF')" }}>vk</a></li>
+                                            <li><a className="socials a" style={{ backgroundImage: "url('https://img.icons8.com/?size=25&id=RhYNENh5cxlS&format=png&color=FFFFFF')" }}>vk</a></li>
+                                            <li><a className="socials a" style={{ backgroundImage: "url('https://img.icons8.com/?size=25&id=16733&format=png&color=FFFFFF')" }}>vk</a></li>
                                         </ul>
                                     </div>
                                 </div>

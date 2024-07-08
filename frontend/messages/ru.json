@@ -6,7 +6,9 @@
       "News": "Новости",
       "Video": "Видео",
       "Dealers": "Дилеры",
-      "Contacts": "Контакты"
+      "Contacts": "Контакты",
+      "Main":"Главная"
+
     },
     "lng": "ru",
     "Main_page_head": {

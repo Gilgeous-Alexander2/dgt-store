@@ -1,8 +1,8 @@
 import React from "react"
-import { Video } from "../types"
+import { Videot } from "../types"
 
 
-export default function Video(props: Video) {
+export default function Video(props: Videot) {
 
     const [click, setClick] = React.useState(true)
 

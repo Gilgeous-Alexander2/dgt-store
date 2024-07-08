@@ -1,4 +1,3 @@
-
 import marker from '../marker.png'
 import React from 'react'
 import { MapContainer } from 'react-leaflet/MapContainer'

@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
     font-family: "Lato";
     src: url('/src/app/ui/Lato/Lato-Medium.ttf') format('truetype');
-}
+} */
 .bottom {
     padding-bottom: 93px;
     z-index: 100;
