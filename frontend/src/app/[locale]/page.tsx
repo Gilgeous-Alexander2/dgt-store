@@ -5,7 +5,6 @@ import Body from './Main page/Body'
 import React from 'react'
 import './App.css'
 import './Components/CSS Styles/Media_requests.css'
-import { GetData } from '../api/route'
 
 
 

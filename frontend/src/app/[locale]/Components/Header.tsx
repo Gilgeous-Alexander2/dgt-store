@@ -2,7 +2,6 @@
 'use client'
 import React from 'react';
 
-import { GetData } from '@/app/api/route';
 import 'swiper/css'
 import '@/app/[locale]/Components/CSS Styles/Media_requests.css'
 import { Link } from '@/navigation';
