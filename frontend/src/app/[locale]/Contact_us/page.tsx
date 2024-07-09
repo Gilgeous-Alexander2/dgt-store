@@ -48,11 +48,7 @@ export default function Contact_us() {
                 <div className="page-contacts-body">
                     <div className="container">
                         <div className="top">
-<<<<<<< HEAD
-                            <div className="page-contacts-map">https://goo.gl/maps/HxQ4SPT6rQn4YZp16</div>
-=======
                             <div className="page-contacts-map"></div>
->>>>>>> Chernovik
                             <div className={`address`}>
                                 <div className="bg-top"></div>
                                 <div className="bg-bottom"></div>

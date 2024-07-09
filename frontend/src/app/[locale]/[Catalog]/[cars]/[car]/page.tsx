@@ -20,11 +20,7 @@ import { useTranslations } from 'next-intl';
 
 import Footer from "../../../Components/Footer"
 import Header from "../../../Components/Header"
-<<<<<<< HEAD
-
-=======
 import Link from 'next/link'
->>>>>>> Chernovik
 import singlebg from '../../../pics/single-bg.png'
 import min14 from '../../../pics/14-min-731x485.jpg'
 import p1 from '../../../pics/1P.png'
@@ -90,11 +86,7 @@ export default function Single_Car_page({ params }: {
                                     <SwiperSlide><img src={p2.src}></img></SwiperSlide>
                                     <SwiperSlide><img src={p3.src}></img></SwiperSlide>
                                     <SwiperSlide><img src={p3.src}></img></SwiperSlide>
-<<<<<<< HEAD
-                                    <SwiperSlide><img src={p3.src}></img></SwiperSlide>
-=======
                                     <SwiperSlide><img src={p2.src}></img></SwiperSlide>
->>>>>>> Chernovik
                                 </Swiper>
                                 <Swiper
                                     spaceBetween={33}
@@ -112,11 +104,7 @@ export default function Single_Car_page({ params }: {
                                     <SwiperSlide><img style={{ height: '85px', width: '150px' }} src={p2.src}></img></SwiperSlide>
                                     <SwiperSlide><img style={{ height: '85px', width: '150px' }} src={p3.src}></img></SwiperSlide>
                                     <SwiperSlide><img style={{ height: '85px', width: '150px' }} src={p3.src}></img></SwiperSlide>
-<<<<<<< HEAD
-                                    <SwiperSlide><img style={{ height: '85px', width: '150px' }} src={p3.src}></img></SwiperSlide>
-=======
                                     <SwiperSlide><img style={{ height: '85px', width: '150px' }} src={p2.src}></img></SwiperSlide>
->>>>>>> Chernovik
                                 </Swiper>
                                 <div className="Vertical32">
                                     <Swiper

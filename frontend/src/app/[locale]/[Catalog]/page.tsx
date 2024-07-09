@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-'use client'
-=======
->>>>>>> Chernovik
 import React from 'react'
 import Link from "next/link"
 
@@ -15,14 +11,6 @@ export default function Many_Cars_page({ params }: {
     params: { Catalog: string }
 }) {
 
-<<<<<<< HEAD
-    const models: CarCardData[] = []
-    auto.map(item => {item.name===params.Catalog? item.models.map(item => models.push(item)) : null})
-
-    return <>
-        <CarPageLayout cards={models} path={[params.Catalog]}>
-            
-=======
     // const res = await fetch('http://localhost:1337/api/auto-marks?populate=*')
     // const res2 = await res.json()
 
@@ -43,7 +31,6 @@ export default function Many_Cars_page({ params }: {
 
     return <>
         <CarPageLayout cards={models}  path={[params.Catalog]}>
->>>>>>> Chernovik
         </CarPageLayout>
     </>
 }
