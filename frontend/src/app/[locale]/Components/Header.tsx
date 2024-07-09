@@ -96,8 +96,8 @@ export default function Header() {
 
                             >
                               {item.models.map((item2: any, item2id: number) =>
-                                <SwiperSlide style={{ height: 'auto', width: '95%' }}>
-                                  <li key={item2id}>
+                                <SwiperSlide key={item2id} style={{ height: 'auto', width: '95%' }}>
+                                  <li >
                                     <Link href={`/${item.name}/${item2.name}`}>{ item2.name }</Link>
                                   </li>
                                 </SwiperSlide>
