@@ -45,13 +45,13 @@ export const auto: CarDataBase[] = [
 }
 ]
 
-export type Video = {
+export type Videot = {
    classname: string
    img: string
    video: string
 }
 
-export type New ={
+export type Newt ={
    img: string;
    text: {
       t1?: string;

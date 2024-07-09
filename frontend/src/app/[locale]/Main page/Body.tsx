@@ -1,3 +1,5 @@
+'use client'
+
 import Footer from "../Components/Footer"
 import Videos from "./Videos"
 import Main_page_head from "./Main-page-head"
@@ -6,11 +8,13 @@ import Advantages from "./Advantages"
 import News from "./News"
 import About_us from "./About_us"
 import { useTranslations } from 'next-intl';
+import dynamic from 'next/dynamic';
 
 
 
 export default function Body() {
-    const Markers2: Marker[] = [{coordinates: [55.753316,37.58067]}]
+    const Markers2: Marker[] = [{coordinates: [55.753316,37.58067],Name: 'DGT Store', address: 'Россия, Москва, ул. Киевская, дом 14 ст 4',
+      phone: "+7 (499) 380 71 11", website: 'http://dgt-store.com', email: 'Info@dgt-store.ru'}]
     const Markers: Marker[] = [{
         Name: 'FAMILY WORKS Барнаул', address: 'Шевченко 135, Барнаул', phone: "+7 (923)641-11-44",
         instagramm: 'https://www.instagram.com/fworks_tuning/',
@@ -19,7 +23,7 @@ export default function Body() {
     
       {
         Name: '8 Mile', address: 'Казахстан, Алматы, ул. Диваева дом 33',
-        phone: "8 (778) 888-88-08", instagramm: 'https://www.instagram.com/8milya_autoimperiya/?igshid=1bsiyyrorsfxx',
+        phone: "+7 (778) 888-88-08", instagramm: 'https://www.instagram.com/8milya_autoimperiya/?igshid=1bsiyyrorsfxx',
         website: 'http://8milya.kz/', coordinates: [43.243015, 76.97652], email: '8milya.info@mail.ru'
       },
     
@@ -31,7 +35,7 @@ export default function Body() {
     
       {
         Name: 'Morendi Ural', address: 'Екатеринбург, Улица 8 Марта, 14',
-        phone: "8 953 822-53-68", instagramm: 'https://instagram.com/morendi_ural?igshid=19o87lj0xqwxl',
+        phone: "+7 953 822-53-68", instagramm: 'https://instagram.com/morendi_ural?igshid=19o87lj0xqwxl',
         coordinates: [56.832895, 60.5999], 
       },
     
@@ -55,7 +59,7 @@ export default function Body() {
     
       {
         Name: 'TopArtTuning', address: 'Тверь, Пр-д Стеклопластиков, 5',
-        phone: "8-920-152-44-22", instagramm: 'https://instagram.com/toparttuning?igshid=lvvp4t3bpnwi',
+        phone: "+7-920-152-44-22", instagramm: 'https://instagram.com/toparttuning?igshid=lvvp4t3bpnwi',
         coordinates: [56.859561, 35.911851], email: 'Topcardetailing@yandex.ru'
       },
     
@@ -85,6 +89,10 @@ export default function Body() {
     
       const t = useTranslations()
 
+      const MapWithNoSSR = dynamic(() => import("./DealersMap"), {
+        ssr: false
+      });
+
     return <>
         <main className="main">
             <section className="main-page">
@@ -93,12 +101,12 @@ export default function Body() {
                     <About_us></About_us>
                     <div id="dealers" className="dealers aos-init aos-animate">
                         <h3 >{t('Main_page.Dealers')}</h3>
-                        <GoogleMap zoom={4} markers={Markers} coordinates={[55.505, 60.09]}></GoogleMap>
+                        <MapWithNoSSR zoom={4} markers={Markers} coordinates={[55.505, 60.09]}></MapWithNoSSR>
                     </div>
                     <Videos ></Videos>
                     <Advantages></Advantages>
                     <News></News>
-                    <GoogleMap zoom={16} markers={Markers2} coordinates={[55.753316,37.58067]}></GoogleMap>
+                    <MapWithNoSSR zoom={16} markers={Markers2} coordinates={[55.753316,37.58067]}></MapWithNoSSR>
                 </div>
             </section>
             <Footer></Footer>

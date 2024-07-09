@@ -5,10 +5,10 @@ import 'swiper/css/free-mode';
 import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, FreeMode, Scrollbar, Mousewheel } from 'swiper/modules';
-import { New } from "../types";
+import { Newt } from "../types";
 import '../Main page/CSS Styles/News.css'
 
-export default function New(props: New) {
+export default function New(props: Newt) {
     return (
         <>
             <div className="news-block">

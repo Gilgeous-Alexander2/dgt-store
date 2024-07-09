@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
     font-family: "Lato";
     src: url('/src/app/ui/Lato/Lato-Medium.ttf') format('truetype');
-}
+} */
 .point-block-img {
     width: 100%;
     height: 134px;

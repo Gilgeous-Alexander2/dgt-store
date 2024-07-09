@@ -24,9 +24,9 @@ export default function Footer() {
             <div className="footer-top">
                 <div className="footer-container">
                     <ul className="footer-socials socials">
-                        <li><a className="socials a" style={{ backgroundImage: "url('http://dgt-store.com/wp-content/uploads/2019/08/icon-instagram.svg')" }}>vk</a></li>
-                        <li><a className="socials a" style={{ backgroundImage: "url('http://dgt-store.com/wp-content/uploads/2019/08/icon-facebook.svg')" }}>vk</a></li>
-                        <li><a className="socials a" style={{ backgroundImage: "url('http://dgt-store.com/wp-content/uploads/2019/08/icon-youtube.svg')" }}>vk</a></li>
+                        <li><a className="socials a" style={{ backgroundImage: "url('https://img.icons8.com/?size=25&id=F4ZPUh2Mk5tk&format=png&color=FFFFFF')" }}>vk</a></li>
+                        <li><a className="socials a" style={{ backgroundImage: "url('https://img.icons8.com/?size=25&id=RhYNENh5cxlS&format=png&color=FFFFFF')" }}>vk</a></li>
+                        <li><a className="socials a" style={{ backgroundImage: "url('https://img.icons8.com/?size=25&id=16733&format=png&color=FFFFFF')" }}>vk</a></li>
                     </ul>
                 </div>
             </div>
@@ -61,7 +61,7 @@ export default function Footer() {
                             </div>
                         </nav>
                         <div className={`footer-contacts`}>
-                            <a href="tel:+7 (499) 380-71-11">7 (499) 380 71 11</a>
+                            <a href="tel:+7 (499) 380-71-11">+7 (499) 380 71 11</a>
                             <a href="mailto:Info@dgt-store.ru">Info@dgt-store.ru</a>
                         </div>
 

@@ -1,7 +1,8 @@
-'use client'
 
+'use client'
 import React from 'react';
 
+import { GetData } from '@/app/api/route';
 import 'swiper/css'
 import '@/app/[locale]/Components/CSS Styles/Media_requests.css'
 import { Link } from '@/navigation';
@@ -9,13 +10,15 @@ import 'swiper/css/free-mode';
 import 'swiper/css/scrollbar';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode, Scrollbar, Mousewheel } from 'swiper/modules';
-
+import { CarCardData } from '../types';
 import '@/app/[locale]/Components/CSS Styles/Header.css'
 
 import { auto } from '../types';
 import logo from '../pics/logo.svg'
 import { useRouter, usePathname } from '@/navigation';
-import { useTranslations } from 'next-intl';
+import { NextIntlClientProvider, useTranslations } from 'next-intl';
+
+
 
 
 
@@ -24,17 +27,18 @@ import { useTranslations } from 'next-intl';
 export default function Header() {
 
 
-  const t = useTranslations();
+  
 
+  const t = useTranslations();
   const router = useRouter();
   const pathname = usePathname();
-
   //const { t, i18n } = useTranslation();
   // const changeLanguage = (lang: any) => {
   //   i18n.changeLanguage(lang);
   // }
+  const models: CarCardData[] = []
+  // const autodata = res.res.data
 
-  const count = 3;
 
   const [sost, setSost] = React.useState(false)
   const [sost2, setSost2] = React.useState(false)
@@ -43,7 +47,6 @@ export default function Header() {
 
 
   return <>
-
 
 
 
@@ -68,16 +71,17 @@ export default function Header() {
                 <ul className="sub-menu">
                   {
                     auto.map((item: any, itemid: number) => (
-                      <li className="has-sub-menu">
+                      <li key={itemid}
+                      className="has-sub-menu">
                         <Link href={`/${item.name}`} >
-                          <img src={item.img} ></img>
+                          {/* <img src={item.img} ></img> */}
                           {item.name}
                         </Link>
 
                         <div className={`sub-menu-wrapper`}>
                           <ul className="sub-menu">
                             <Swiper
-                          key={itemid}
+                            
                               style={{
                                 "--swiper-scrollbar-drag-bg-color": "rgba(255, 0, 0)",
                                 "maxHeight": "190px"
@@ -88,13 +92,13 @@ export default function Header() {
                               freeMode={true}
                               scrollbar={true}
                               mousewheel={true}
-                              modules={[ FreeMode, Mousewheel,Scrollbar]}
-                              
+                              modules={[FreeMode, Mousewheel, Scrollbar]}
+
                             >
-                              {item.models.map((model: any, modelid: number) =>
+                              {item.models.map((item2: any, item2id: number) =>
                                 <SwiperSlide style={{ height: 'auto', width: '95%' }}>
-                                  <li key={modelid}>
-                                    <Link href={`/${item.name}/${model.name}`}>{model.name}</Link>
+                                  <li key={item2id}>
+                                    <Link href={`/${item.name}/${item2.name}`}>{ item2.name }</Link>
                                   </li>
                                 </SwiperSlide>
                               )}
@@ -128,9 +132,9 @@ export default function Header() {
               </div>
             </div>
             <ul className="header-socials socials">
-              <li><a className="socials a" style={{ backgroundImage: "url('http://dgt-store.com/wp-content/uploads/2019/08/icon-instagram.svg')" }}>vk</a></li>
-              <li><a className="socials a" style={{ backgroundImage: "url('http://dgt-store.com/wp-content/uploads/2019/08/icon-facebook.svg')" }}>vk</a></li>
-              <li><a className="socials a" style={{ backgroundImage: "url('http://dgt-store.com/wp-content/uploads/2019/08/icon-youtube.svg')" }}>vk</a></li>
+              <li><a className="socials a" style={{ backgroundImage: "url('https://img.icons8.com/?size=25&id=F4ZPUh2Mk5tk&format=png&color=FFFFFF')" }}>vk</a></li>
+              <li><a className="socials a" style={{ backgroundImage: "url('https://img.icons8.com/?size=25&id=RhYNENh5cxlS&format=png&color=FFFFFF')" }}>vk</a></li>
+              <li><a className="socials a" style={{ backgroundImage: "url('https://img.icons8.com/?size=25&id=16733&format=png&color=FFFFFF')" }}>vk</a></li>
             </ul>
             <div className="mobile-button">
               <svg fill="#ffffff" viewBox="-5.5 0 32 32" onClick={() => { setSost(true) }} version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>menu</title> <path d="M1.375 9.156h18.063c0.781 0 1.375-0.594 1.375-1.375 0-0.75-0.594-1.344-1.375-1.344h-18.063c-0.781 0-1.375 0.594-1.375 1.344 0 0.781 0.594 1.375 1.375 1.375zM1.375 14.625h18.063c0.781 0 1.375-0.594 1.375-1.375 0-0.75-0.594-1.344-1.375-1.344h-18.063c-0.781 0-1.375 0.594-1.375 1.344 0 0.781 0.594 1.375 1.375 1.375zM1.375 20.094h18.063c0.781 0 1.375-0.594 1.375-1.344 0-0.781-0.594-1.375-1.375-1.375h-18.063c-0.781 0-1.375 0.594-1.375 1.375 0 0.75 0.594 1.344 1.375 1.344zM1.375 25.563h18.063c0.781 0 1.375-0.594 1.375-1.344 0-0.781-0.594-1.375-1.375-1.375h-18.063c-0.781 0-1.375 0.594-1.375 1.375 0 0.75 0.594 1.344 1.375 1.344z"></path> </g></svg>            </div>
@@ -142,7 +146,11 @@ export default function Header() {
           <div className="close">
             <svg viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={() => { setSost(false) }} stroke="#ffffff"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3 21.32L21 3.32001" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> <path d="M3 3.32001L21 21.32" stroke="#ffffff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>
           </div>
-          <div className="mobile-menu-item">
+
+
+
+
+          {/* <div className="mobile-menu-item">
             <ul className="mobile-menu-list">
               <li><Link href="/#about" >{t('Main_page.header.about_us')}</Link></li>
               <li className="has-sub-menu">
@@ -161,7 +169,7 @@ export default function Header() {
                           </Link>
 
                           <div className="sub-menu-wrapper">
-                            {sost3?
+                            {sost3 ?
                               <ul className="sub-menu">
                                 <Swiper
                                   style={{
@@ -204,11 +212,10 @@ export default function Header() {
               <li><a className="socials a" style={{ backgroundImage: "url('http://dgt-store.com/wp-content/uploads/2019/08/icon-facebook.svg')" }}>vk</a></li>
               <li><a className="socials a" style={{ backgroundImage: "url('http://dgt-store.com/wp-content/uploads/2019/08/icon-youtube.svg')" }}>vk</a></li>
             </ul>
-          </div>
+          </div> */}
         </div>
         : null
       }
     </header>
-
   </>
 }
